@@ -1,2 +1,8 @@
 bower_components/
 node_modules/
+
+static/css/bundle-blessed1.css
+
+static/css/bundle-blessed2.css
+
+static/css/bundle.css
