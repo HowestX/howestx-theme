@@ -15,6 +15,7 @@
     padding: 0.5em 1.2em;
     outline: none;
     overflow: hidden;
+    border-color: @fg-color;
 
     @media (max-width: @screen-xs-max) {
         white-space: normal;
@@ -47,10 +48,10 @@
 }
 
 .ionisx-btn-hover(@fg-color, @bg-color) {
-    background: none;
+    // background: none;
     background-color: @fg-color;
     color: @bg-color;
-    border-color: @bg-color;
+    border-color: @fg-color;
     box-shadow: none;
 
     & when (@bg-color = @white) {
