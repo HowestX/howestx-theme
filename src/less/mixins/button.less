@@ -1,3 +1,4 @@
+//.ionisx-btn(hoverkleur, normale kleur)
 .ionisx-btn(@fg-color, @bg-color) {
     .square(auto);
 
@@ -51,7 +52,7 @@
     // background: none;
     background-color: @fg-color;
     color: @bg-color;
-    border-color: @fg-color;
+    border-color: @bg-color;
     box-shadow: none;
 
     & when (@bg-color = @white) {
