@@ -37,7 +37,7 @@
                     margin: 0 0 20px 0;
 
                     &:last-child {
-                        margin: 0;
+                        margin: 10px;
                     }
 
                     > span {
@@ -85,6 +85,39 @@
     }
 
     .my-courses {
+        .course
+            .details
+                .course-info{
+                    margin-bottom: 10px;
+                }
+                .course-actions
+                    .action{
+                        padding: 5px;
+                    }
+
+                a.enter-course{
+                    //override voor die lelijke windows vista button
+                    //important: veel geluk aan diegene die de knop wil veranderen in de toekomst
+                    // The Based God protects this code - Lil B
+                    padding: 10px 18px !important;
+                    text-shadow: none !important;
+                    background-image: none !important;
+                    background-color: none !important;
+                    box-shadow: none !important;
+                    background-color: @color-howest !important;
+                    color: @white;
+                    border-color: @white !important;
+
+                    &:hover{
+                        text-shadow: none !important;
+                        background-image: none !important;
+                        background-color: none !important;
+                        box-shadow: none !important;
+                        background-color: @white !important;
+                        color: @color-howest;
+                        border-color: @color-howest !important;
+                    }
+                }
         .square(auto);
         .make-md-column(9);
         .make-lg-column(9);
@@ -286,7 +319,7 @@
                     }
 
                     .enter-course {
-                        .ionisx-btn(@white, @color-secondary);
+                        .ionisx-btn(@white, @color-howest);
                         .size(100%, auto);
 
                         font-size: 0.9em;
