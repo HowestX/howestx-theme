@@ -2,6 +2,11 @@
     margin: 0;
     background: none;
 
+    .courses-featured-title{
+                    text-align: left;
+                    padding-left: 18px;
+                }
+
     .courses-container
         .highlighted-courses
             .courses
@@ -9,13 +14,23 @@
                     .courses-listing-item{
                         clear: none;
                     }
-                        .course
-                            .course-info{
-                                height: 100px;
+                        .course{
+                            background: #fbad26 !important;
+                        }
+                            a{
+                                background-color: #ececec !important;
                             }
-                                .course-date{
-                                    visibility: hidden;
-                                }
+                            .course-info{
+                                height: 200px;
+                            }
+                                .course-name
+                                    .course-title{
+                                        margin: 0;
+                                        height: 40px;
+                                    }
+                                // .course-date{
+                                //     visibility: hidden;
+                                // }
 
     > header {
         .square(auto);
@@ -155,7 +170,9 @@
 
                 &:hover {
                     box-shadow: none;
-                    border-color: @color-howest-pink;
+                    //course hover kleur border aanpassen per vak
+                    // border-color: @color-howest-pink;
+                    border-color: #fbad26;
                 }
 
                 .course-title{
