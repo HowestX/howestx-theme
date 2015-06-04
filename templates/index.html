@@ -67,20 +67,20 @@
             <ul class="courses-listing">
             ## limiting the course number by using HOMEPAGE_COURSE_MAX as the maximum number of courses
             %for course in courses[:settings.HOMEPAGE_COURSE_MAX]:
-              <li class="courses-listing-item">
+              <li class="courses-listing-item" id="course-yellow">
                 <%include file="course.html" args="course=course" />
               </li>
             %endfor
-              <li class="courses-listing-item">
+              <li class="courses-listing-item" id="course-blue">
                 <%include file="course.html" args="course=course" />
               </li>
-              <li class="courses-listing-item">
+              <li class="courses-listing-item" id="course-grey">
                 <%include file="course.html" args="course=course" />
               </li>
-              <li class="courses-listing-item">
+              <li class="courses-listing-item" id="course-green">
                 <%include file="course.html" args="course=course" />
               </li>
-              <li class="courses-listing-item">
+              <li class="courses-listing-item" id="course-purple">
                 <%include file="course.html" args="course=course" />
               </li>
             </ul>
