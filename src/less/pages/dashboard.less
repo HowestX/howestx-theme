@@ -1,16 +1,4 @@
 > .dashboard {
-    .dashboard-search-bar{
-        padding: 0;
-        border: none;
-        margin-left: 5px;
-        margin-top: 0;
-    }
-        label{
-            visibility: hidden;
-        }
-        .search-field-wrapper{
-
-        }
     .ionisx-container();
 
     margin-top: @layout-top-spacing;
@@ -20,7 +8,6 @@
     }
 
     .profile-sidebar {
-        visibility: hidden;
         .hidden-xs();
         .hidden-sm();
         .make-md-column(3);
@@ -50,7 +37,7 @@
                     margin: 0 0 20px 0;
 
                     &:last-child {
-                        margin: 10px;
+                        margin: 0;
                     }
 
                     > span {
@@ -98,39 +85,6 @@
     }
 
     .my-courses {
-        .course
-            .details
-                .course-info{
-                    margin-bottom: 10px;
-                }
-                .course-actions
-                    .action{
-                        padding: 8px !important;
-                    }
-
-                a.enter-course{
-                    //override voor die lelijke windows vista button
-                    //important: veel geluk aan diegene die de knop wil veranderen in de toekomst
-                    // The Based God protects this code - Lil B
-                    padding: 10px 18px !important;
-                    text-shadow: none !important;
-                    background-image: none !important;
-                    background-color: none !important;
-                    box-shadow: none !important;
-                    background-color: @color-howest !important;
-                    color: @white;
-                    border-color: @color-howest !important;
-
-                    &:hover{
-                        text-shadow: none !important;
-                        background-image: none !important;
-                        background-color: none !important;
-                        box-shadow: none !important;
-                        background-color: @white !important;
-                        color: @color-howest;
-                        border-color: @color-howest !important;
-                    }
-                }
         .square(auto);
         .make-md-column(9);
         .make-lg-column(9);
@@ -190,7 +144,7 @@
                 }
 
                 &:hover {
-                    border-color: @color-howest;
+                    border-color: @color-primary;
                 }
 
                 &:last-child {
@@ -332,7 +286,7 @@
                     }
 
                     .enter-course {
-                        .ionisx-btn(@white, @color-howest);
+                        .ionisx-btn(@white, @color-secondary);
                         .size(100%, auto);
 
                         font-size: 0.9em;

@@ -2,114 +2,13 @@
     margin: 0;
     background: none;
 
-    li#course-yellow{
-        .course{
-            background: @color-course-yellow !important;
-
-            &:hover{
-                border-color: @color-course-yellow !important;
-            }
-            .course-title{
-                    color: @color-course-yellow;
-            }
-        }
-    } 
-
-    li#course-blue{
-        .course{
-            background: @color-course-blue !important;
-
-            &:hover{
-                border-color: @color-course-blue !important;
-            }
-            .course-title{
-                    color: @color-course-blue;
-            }
-        }
-    }
-
-    li#course-grey{
-        .course{
-            background: @color-course-grey !important;
-
-            &:hover{
-                border-color: @color-course-grey !important;
-            }
-            .course-title{
-                    color: @color-course-grey;
-            }
-        }
-    }
-
-    li#course-green{
-        .course{
-            background: @color-course-green !important;
-
-            &:hover{
-                border-color: @color-course-green !important;
-            }
-            .course-title{
-                    color: @color-course-green;
-            }
-        }
-    }
-
-    li#course-purple{
-        .course{
-            background: @color-course-purple !important;
-
-            &:hover{
-                border-color: @color-course-purple !important;
-            }
-            .course-title{
-                    color: @color-course-purple;
-            }
-        }
-    }       
-
-    .courses-featured-title{
-                    text-align: left;
-                    padding-left: 18px;
-    }
-    
-    .courses-container{
-        .highlighted-courses{
-            .courses{
-                .courses-listing{
-                    .courses-listing-item{
-                        clear: none;
-                    
-                        // .course{
-                        //     background: #fbad26 !important;
-                        // }
-                            a{
-                                background-color: #ececec !important;
-                            }
-                            .course-info{
-                                height: 200px;
-                            
-                                .course-name
-                                    .course-title{
-                                        margin: 0;
-                                        height: 40px;
-                                    }
-                                // .course-date{
-                                //     visibility: hidden;
-                                // }
-                            }
-                    }
-                }                   
-            }
-        }
-    }
-
     > header {
         .square(auto);
 
         box-shadow: none;
         background: 0;
         border: none;
-        background-color: @color-howest;
+        background-color: @color-primary;
         margin: 0;
         padding: 60px 0;
 
@@ -121,15 +20,6 @@
             padding-top: 15px;
 
             .title {
-                .course-search
-                    .search-button{
-                        right: 0;
-                        background-color: #1790c7;
-                        border-left-style: none;
-                    }
-                    .search-input{
-                        border: 2px solid #1790c7;
-                    }
                 .square(auto);
                 .make-md-column(8);
                 .make-lg-column(8);
@@ -241,13 +131,7 @@
 
                 &:hover {
                     box-shadow: none;
-                    //course hover kleur border aanpassen per vak
-                    border-color: @color-howest-pink;
-                    // border-color: #fbad26;
-                }
-
-                .course-title{
-                    color: @color-howest-pink;
+                    border-color: @color-primary;
                 }
 
                 .inner-wrapper {
