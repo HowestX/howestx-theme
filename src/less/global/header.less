@@ -119,11 +119,7 @@ header.global, header.global-new, header.global.slim {
             margin: 0;
 
             > li.primary > a {
-                .ionisx-btn(@white, @color-howest);
-
-                &:hover{
-                    border-color: @white;
-                }
+                .ionisx-btn(@color-primary, @white);
 
                 border-radius: 0;
                 border-top-left-radius: 4px;
@@ -144,8 +140,7 @@ header.global, header.global-new, header.global.slim {
                 }
 
                 &.dropdown.active {
-                    .ionisx-btn-hover(@white, @color-howest);
-                    border-color: @white;
+                    .ionisx-btn-hover(@color-primary, @white);
                 }
 
                 &.dropdown {
@@ -170,7 +165,7 @@ header.global, header.global-new, header.global.slim {
                 left: initial;
                 right: 0;
                 box-shadow: none;
-                border: 1px solid @color-howest;
+                border: 1px solid @color-primary;
                 border-top: 0 none;
                 border-top-right-radius: 0;
                 background-color: @white;
@@ -183,7 +178,7 @@ header.global, header.global-new, header.global.slim {
                     transition: all .1s ease-in;
                     border: 0 none;
                     padding: 2px 8px;
-                    color: @color-howest;
+                    color: @color-primary;
 
                     > a {
                         border: 0 none;
@@ -195,12 +190,11 @@ header.global, header.global-new, header.global.slim {
                         &:hover, &:focus, &:active {
                             background: none;
                             color: inherit;
-                            // border-color: @white;
                         }
                     }
 
                     &:hover {
-                        background-color: @color-howest;
+                        background-color: @color-primary;
                         color: @white;
 
                         > a {
