@@ -37,7 +37,11 @@
       </li>
       %endif
     </ul>
-    <p class="copyright">${_(u"© 2015 HowestX, some rights reserved.").format(platform_name=platform_name())}</p>
-    
+    <p class="copyright">${_(u"© 2015 {platform_name}, some rights reserved.").format(platform_name=platform_name())}</p>
+    <div class="by-ionisx">
+      <a href="https://ionisx.com">
+        <img src="${static.url('themes/{theme_name}/images/logo-x-white.png'.format(theme_name=settings.THEME_NAME))}" alt="Theme by IONISx">
+      </a>
+    </div>
   </div>
 </footer>
