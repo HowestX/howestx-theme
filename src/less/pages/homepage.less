@@ -8,7 +8,7 @@
         box-shadow: none;
         background: 0;
         border: none;
-        background-color: @color-primary;
+        background-color: @color-howest;
         margin: 0;
         padding: 60px 0;
 
@@ -20,6 +20,15 @@
             padding-top: 15px;
 
             .title {
+                .course-search
+                    .search-button{
+                        right: 0;
+                        background-color: #1790c7;
+                        border-left-style: none;
+                    }
+                    .search-input{
+                        border: 2px solid #1790c7;
+                    }
                 .square(auto);
                 .make-md-column(8);
                 .make-lg-column(8);
@@ -131,7 +140,11 @@
 
                 &:hover {
                     box-shadow: none;
-                    border-color: @color-primary;
+                    border-color: @color-howest-pink;
+                }
+
+                .course-title{
+                    color: @color-howest-pink;
                 }
 
                 .inner-wrapper {
