@@ -47,6 +47,10 @@ site_status_msg = get_site_status_msg(course_id)
       </a>
     </h1>
 
+    <a class="navigation" href="${marketing_link('COURSES')}">${_('Courses')}</a>
+
+    <a class="navigation" href="${marketing_link('COURSES')}">${_('Exercises')}</a>
+
     % if course:
     <h2><span class="provider">${course.display_org_with_default | h}:</span>
       ${course.display_number_with_default | h}
@@ -65,7 +69,7 @@ site_status_msg = get_site_status_msg(course_id)
       <%block name="navigation_global_links_authenticated">
         % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
           <li class="nav-global-01">
-            <a href="${marketing_link('COURSES')}">${_('Find Courses')}</a>
+          
           </li>
         % endif
         %if settings.FEATURES.get('ENABLE_SYSADMIN_DASHBOARD','') and user.is_staff:
