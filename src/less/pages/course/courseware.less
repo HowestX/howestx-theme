@@ -154,10 +154,13 @@
             button {
                 .size(auto, 44px);
 
+                // border: none;
                 border: 2px solid @color-border;
                 background-position: center center;
                 box-shadow: none;
                 text-shadow: none;
+                background-image: none;
+                background-color: @color-border;
             }
 
             ul {
@@ -216,14 +219,16 @@
                             box-shadow: none;
                             color: @white;
                             border-top: 2px solid @color-border;
-                            border-bottom: 2px solid @color-border;
+                            // border-bottom: 2px solid @color-border;
+                            border: 2px solid @color-border;
 
                             @media (max-width: @screen-sm-max) {
                                 display: none;
                             }
 
                             &.active {
-                                border-color: @color-primary;
+                                // border-color: @color-primary;
+                                border-color: #3c556c;
                                 color: @color-primary;
 
                                 @media (max-width: @screen-sm-max) {
@@ -232,8 +237,10 @@
                                 }
 
                                 &.progress-none {
-                                    border-color: @color-primary;
-                                    color: @color-primary;
+                                    // border-color: @color-primary;
+                                    border-color: #3c556c;
+                                    color: #3c556cy;
+                                    // color: @color-primary;
                                 }
 
                                 &.progress-some {
@@ -290,7 +297,7 @@
                             &:after {
                                 font: inherit;
                                 color: inherit;
-                                content: '\f040';
+                                // content: '\f040';
                                 font-family: 'FontAwesome';
                                 font-size: 1.2em;
                                 display: block;
@@ -299,11 +306,11 @@
                             }
 
                             &.seq_video:after {
-                                content: '\f03d';
+                                // content: '\f03d';
                             }
 
                             &.seq_problem:after {
-                                content: '\f040';
+                                // content: '\f040';
                             }
 
                             > p {

@@ -51,6 +51,9 @@ header.global, header.global-new, header.global.slim {
         }
 
         h2 {
+            //temporarily hidden
+            display: none;
+            
             .square(auto);
 
             font: inherit;
@@ -126,9 +129,9 @@ header.global, header.global-new, header.global.slim {
             > li.primary > a {
                 .ionisx-btn(@white, @color-howest);
 
-                &:hover{
+                &:hover, &:focus, &:active{
                     border-color: @white;
-                }
+                } 
 
                 border-radius: 0;
                 border-top-left-radius: 4px;
@@ -176,7 +179,7 @@ header.global, header.global-new, header.global.slim {
                 right: 0;
                 box-shadow: none;
                 border: 1px solid @color-howest;
-                border-top: 0 none;
+                // border-top: 0 none;
                 border-top-right-radius: 0;
                 background-color: @white;
 
