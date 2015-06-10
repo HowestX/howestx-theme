@@ -2,6 +2,8 @@
     margin: 0;
     background: none;
 
+
+
     li.course-yellow{
         .course{
             background: @color-course-yellow !important;
@@ -12,8 +14,12 @@
             .course-title{
                     color: @color-course-yellow !important;
             }
+
+
         }
     } 
+
+
 
     li.course-blue{
         .course{
@@ -38,6 +44,13 @@
             .course-title{
                     color: @color-course-grey !important;
             }
+
+          a{
+            background-image: url("../images/Vakafbeeldingen/Serverside.jpg");
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
         }
     }
 
@@ -51,6 +64,13 @@
             .course-title{
                     color: @color-course-green !important;
             }
+
+          /*a{
+            background-image: url("../images/Vakafbeeldingen/DES.jpg");
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+          }*/
         }
     }
 
@@ -62,8 +82,21 @@
                 border-color: @color-course-purple !important;
             }
             .course-title{
-                    color: @color-course-purple !important;
+                color: @color-course-purple !important;
+
+
             }
+
+          a{
+            background-image: url("../images/Vakafbeeldingen/infrastructure.png");
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+          }
+
+
+
         }
     }       
 
@@ -107,11 +140,15 @@
         .square(auto);
 
         box-shadow: none;
-        background: 0;
         border: none;
         background-color: @color-howest;
         margin: 0;
         padding: 60px 0;
+
+        //BACKGROUND IMAGE
+        /*background-image: url("../images/homepageheader.jpg");
+        background-repeat: no-repeat;
+        background-size: 1000 px;*/
 
         .outer-wrapper {
             .ionisx-container();
@@ -124,7 +161,8 @@
                 .course-search
                     .search-button{
                         right: 0;
-                        background-color: #1790c7;
+                        //old! background-color: #1790c7;
+                        background-color: @color-howest-pink;
                         border-left-style: none;
                     }
                     .search-input{
@@ -142,6 +180,7 @@
                 min-height: 0;
                 margin: 0;
                 padding: 0;
+                margin-right: 500px;
 
                 hgroup {
                     padding: 0;
