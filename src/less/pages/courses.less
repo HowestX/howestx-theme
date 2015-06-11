@@ -7,15 +7,29 @@
     }
 
     .courses-container{
+
+        margin-left: 0px;
+        @media (min-width: @screen-sm-max){
+                    margin-left: 140px;
+        }
+
         ul{
             list-style-type: none;
             margin: 0;
             padding: 0;
-           
+ 
         }
 
         .navigation-course2{
             margin:20px 0px;
+
+           li{
+            float: left;
+
+            margin-bottom: 5px;
+       
+            } 
+           
         }
 
         
@@ -24,27 +38,35 @@
             display: inline;
         }
 
-        #links{
+        .links{
             border-right: 0px;
             border-left: 1px;
             border-bottom: 1px;
             border-top: 1px;
             border-style: solid;
             border-color: @color-howest-pink;
+   
+
         }
 
-        #linksactive{
+        .linksactive{
             border-right: 0px;
             border-left: 1px;
             border-bottom: 1px;
             border-top: 1px;
             border-style: solid;
             border-color: @color-howest-pink;
-            color:white;
+            color: white;
             background-color: @color-howest-pink;
+
+
+            a{
+                color: white;
+            }
+
         }
 
-        #rechts{
+        .rechts{
             
             /*border-left: 1px;
             border-bottom: 1px;
@@ -52,6 +74,7 @@
             border-style: solid;
             border-color: @color-howest-pink;*/
             border: 1px solid @color-howest-pink;
+
         }
 
         a {
@@ -87,12 +110,14 @@
             .make-lg-column(4);
 
             margin: 0;
+            margin-top: 15px;
             display: block;
             text-align: left;
 
-            &:last-child {
+
+            /*&:last-child {
                 margin: 0;
-            }
+            }*/
 
             .course {
                 box-shadow: none;
