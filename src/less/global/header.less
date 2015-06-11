@@ -14,9 +14,13 @@ header.global, header.global-new, header.global.slim {
     .registerbutton{
         color: @color-howest-pink;
         text-decoration: underline;
-        font-size: 10px;
+        font-size: 15px;
         margin-right: 10px;
         cursor:pointer;
+
+        @media (max-width: @screen-md-min) {
+            font-size:10px;
+        }
     }
 
     .navigation{
