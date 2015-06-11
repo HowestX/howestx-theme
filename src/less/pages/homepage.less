@@ -4,105 +4,122 @@
 
     li.course-yellow{
         .course{
-            .course-name{
-            background: @color-course-yellowrgba;
-            }
-
-            &:hover{
-                border-color: @color-course-yellow !important;
-                            
-            }
-
             a{
                 background-image: url("../images/Vakafbeeldingen/design.jpg");
                 background-size: 120%;
                 background-position: center;
                 background-repeat: no-repeat;
+
+                .course-info{
+                    border-color: @color-course-yellow;
+
+                    .course-name{
+                        background: @color-course-yellowrgba;
+                    }
+                }
             }
+            &:hover{
+                border-color: @color-course-yellow !important;
+            }
+            // border-color: @color-course-yellow !important;  
         }
     }
 
     li.course-blue{
         .course{
-            .course-name{
-            background-color: @color-course-bluergba;
-            }
+            a{
+                background-image: url("../images/Vakafbeeldingen/appdev.png");
+                background-size: 120%;
+                background-position: -30px -50px;
+                background-repeat: no-repeat;
 
+                .course-info{
+                    border-color: @color-course-blue;
+
+                    .course-name{
+                        background: @color-course-bluergba;
+                    } 
+                }
+            }
             &:hover{
                 border-color: @color-course-blue !important;
-                transition: 2s;
             }
-
-            a{
-            background-image: url("../images/Vakafbeeldingen/appdev.png");
-            background-size: 120%;
-            background-position: -30px -50px;
-            background-repeat: no-repeat;
-            }     
+            // border-color: @color-course-blue !important; 
         }
     }
 
     li.course-grey{
         .course{
-            .course-name{
-            background-color: @color-course-greyrgba;
-            }
-
-            &:hover{
-                border-color: @color-course-grey !important;
-            }
-
             a{
                 background-image: url("../images/Vakafbeeldingen/Serverside.jpg");
                 background-size: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
+
+                .course-info{
+                    border-color: @color-course-grey;
+
+                    .course-name{
+                        background: @color-course-greyrgba;
+                    } 
+                }
             }
+            &:hover{
+                border-color: @color-course-grey !important;
+            }
+            // border-color: @color-course-grey !important;
         }
     }
 
     li.course-green{
         .course{
-            .course-name{
-                background-color: @color-course-greenrgba;
-            }
-
-            &:hover{
-                border-color: @color-course-green !important;
-            }
-            
             a{
                 background-image: url("../images/Vakafbeeldingen/des.png");
                 background-size: 51%;
                 background-position: center;
                 background-repeat: no-repeat;
+
+                .course-info{
+                    border-color: @color-course-green;
+
+                    .course-name{
+                        background: @color-course-greenrgba;
+                    } 
+                }
             }
+            &:hover{
+                border-color: @color-course-green !important;
+            }
+            // border-color: @color-course-green !important;
         }
     }
 
     li.course-purple{
         .course{
-            .course-name{
-                background-color: @color-course-purplergba;
-                
-            }
+            a{
+                background-image: url("../images/Vakafbeeldingen/infrastructure.png");
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
 
-            &:hover{
-                border-color: @color-course-purple !important;                
+                .course-info{
+                    border-color: @color-course-purple;
+
+                    .course-name{
+                        background: @color-course-purplergba;
+                    } 
+                }
             }
-            
-          a{
-            background-image: url("../images/Vakafbeeldingen/infrastructure.png");
-            background-size: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-          }
+            &:hover{
+                border-color: @color-course-purple !important;
+            }
+            // border-color: @color-course-purple !important;
         }
     }       
 
     .courses-featured-title{
-                    text-align: left;
-                    padding-left: 18px;
+        text-align: left;
+        padding-left: 18px;
     }
     
     .courses-container{
@@ -116,18 +133,15 @@
                         //     background: #fbad26 !important;
                         // }
                         a{
-                            background-color: #ececec !important;
+                            // background-color: #ececec !important;
                         }
                         .course-info{
                             height: 200px;
                             padding-top: 160px;
                             overflow: hidden;
                             margin-top: 0px !important;
-                            -webkit-transition-duration: 0.3s;
-                            transition-duration: 0.3s;
-                            -webkit-transition-property: padding;
-                            -webkit-transition-timing-function: linear;
-                            transition-timing-function: ease-out;
+                            transition: all 0.3s ease-out;
+                            -webkit-transition: all 0.3s ease-out;
 
                             @media(max-width: @screen-xs)
                             {
@@ -135,11 +149,8 @@
                             }
                             &:hover{
                                 padding-top:100px;
-                                -webkit-transition-duration: 0.3s; /* Safari */
-                                transition-duration: 0.3s;
-                                -webkit-transition-property: padding; /* Safari */
-                                -webkit-transition-timing-function: linear; /* Safari and Chrome */
-                                transition-timing-function: ease-out;
+                                transition: all 0.3s ease-out;
+                                -webkit-transition: all 0.3s ease-out;
                             }
                         
                             .course-name{
@@ -177,7 +188,7 @@
         border: none;
         background-color: @color-howest;
         margin: 0;
-        padding: 30px 0;
+        padding: 30px 0 35px 0;
 
         //BACKGROUND IMAGE
         /*background-image: url("../images/homepageheader.jpg");
@@ -190,6 +201,10 @@
             border-radius: @default-border-radius;
             padding-bottom: 15px;
             padding-top: 15px;
+            margin-left: )px;
+            @media (min-width: @screen-sm-max){
+                    margin-left: 115px;
+            }
 
             .title {
                 .course-search
