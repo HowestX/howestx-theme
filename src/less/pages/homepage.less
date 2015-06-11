@@ -6,14 +6,23 @@
 
     li.course-yellow{
         .course{
-            background: @color-course-yellow !important;
+            .course-name{
+            background: @color-course-yellowrgba;
 
+            }
             &:hover{
                 border-color: @color-course-yellow !important;
+                            
             }
-            .course-title{
-                    color: @color-course-yellow !important;
-            }
+
+            a{
+            background-image: url("../images/Vakafbeeldingen/design.jpg");
+            background-size: 120%;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+
+         
 
 
         }
@@ -23,27 +32,38 @@
 
     li.course-blue{
         .course{
-            background: @color-course-blue !important;
+            .course-name{
+            background-color: @color-course-bluergba;
+            }
 
             &:hover{
                 border-color: @color-course-blue !important;
+                transition: 2s;
             }
-            .course-title{
-                    color: @color-course-blue !important;
+
+            a{
+            background-image: url("../images/Vakafbeeldingen/appdev.png");
+            background-size: 120%;
+            background-position: -30px -50px;
+            background-repeat: no-repeat;
             }
+         
+
+          
+           
         }
     }
 
     li.course-grey{
         .course{
-            background: @color-course-grey !important;
+            .course-name{
+            background-color: @color-course-greyrgba;
+            }
 
             &:hover{
                 border-color: @color-course-grey !important;
             }
-            .course-title{
-                    color: @color-course-grey !important;
-            }
+            
 
           a{
             background-image: url("../images/Vakafbeeldingen/Serverside.jpg");
@@ -56,36 +76,37 @@
 
     li.course-green{
         .course{
-            background: @color-course-green !important;
+            .course-name{
+                background-color: @color-course-greenrgba;
+            }
 
             &:hover{
                 border-color: @color-course-green !important;
             }
-            .course-title{
-                    color: @color-course-green !important;
-            }
+            
 
-          /*a{
-            background-image: url("../images/Vakafbeeldingen/DES.jpg");
-            background-size: 100%;
+          a{
+            background-image: url("../images/Vakafbeeldingen/des.png");
+            background-size: 51%;
             background-position: center;
             background-repeat: no-repeat;
-          }*/
+          }
         }
     }
 
     li.course-purple{
         .course{
-            background: @color-course-purple !important;
+            .course-name{
+                background-color: @color-course-purplergba;
+                
+            }
+
 
             &:hover{
                 border-color: @color-course-purple !important;
+                
             }
-            .course-title{
-                color: @color-course-purple !important;
-
-
-            }
+            
 
           a{
             background-image: url("../images/Vakafbeeldingen/infrastructure.png");
@@ -94,6 +115,8 @@
             background-repeat: no-repeat;
 
           }
+
+
 
 
 
@@ -120,15 +143,38 @@
                             }
                             .course-info{
                                 height: 200px;
+                                padding-top: 160px;
+                                overflow: hidden;
+                                margin-top: 0px !important;
+
+                                @media(max-width: @screen-xs)
+                                {
+                                    padding-top:0px;
+                                }
+                                &:hover{
+                                    padding-top:0px;
+                                    -webkit-transition-duration: 5s; /* Safari */
+                                    transition-duration: 0.5s;
+                                    -webkit-transition-property: padding; /* Safari */
+                                    -webkit-transition-timing-function: linear; /* Safari and Chrome */
+                                    transition-timing-function: ease-out;
+                                }
                             
                                 .course-name
+                                    {
+                                        margin-top: 0px !important;
+                                        height: 200px;
+
                                     .course-title{
                                         margin: 0;
                                         height: 40px;
+                                        color: white !important;
+                                        padding-top: 10px;
                                     }
                                 // .course-date{
                                 //     visibility: hidden;
                                 // }
+                            }
                             }
                     }
                 }                   
@@ -143,7 +189,7 @@
         border: none;
         background-color: @color-howest;
         margin: 0;
-        padding: 60px 0;
+        padding: 30px 0;
 
         //BACKGROUND IMAGE
         /*background-image: url("../images/homepageheader.jpg");
@@ -161,6 +207,7 @@
                 .course-search
                     .search-button{
                         right: 0;
+                        height: 45px;
                         //old! background-color: #1790c7;
                         background-color: @color-howest-pink;
                         border: 2px solid @color-howest-pink;
@@ -168,6 +215,7 @@
                     }
                     .search-input{
                         border: 2px solid @color-howest-pink;
+                        height: 45px !important;
                     }
                 .square(auto);
                 .make-md-column(8);
