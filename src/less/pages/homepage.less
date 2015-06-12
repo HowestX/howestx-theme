@@ -123,9 +123,10 @@
     }
     
     .courses-container{
-        margin-left: 0px;
-        @media (min-width: @screen-sm-max){
-                    margin-left: 140px;
+        padding: 18px 10px 0 30px;
+        margin-left: auto;
+        @media (max-width: @screen-lg){
+            padding: 18px 10px 0 10px;
         }
         .highlighted-courses{
             .courses{
@@ -201,14 +202,16 @@
 
         .outer-wrapper {
             .ionisx-container();
-
+            @media (max-width: @screen-lg){
+                margin: 0;
+            }
             border-radius: @default-border-radius;
             padding-bottom: 15px;
             padding-top: 15px;
-            margin-left: 0px;
-            @media (min-width: @screen-sm-max){
-                    margin-left: 135px;
-            }
+            margin-left: auto;
+            // @media (min-width: @screen-sm-max){
+            //         margin-left: 135px;
+            // }
 
             .title {
                 .course-search
