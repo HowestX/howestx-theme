@@ -106,15 +106,32 @@
             }*/
 
             .course {
+                a{
+                    padding: 20px 20px 0 20px;
+                }
+                .course-progress{
+                    width: 54%;
+                    height: 30px;
+                    background-color: #b3bdc7;
+                    color: @white;
+
+                    &:hover{
+                        background-color: @color-course-yellow;
+                        transition: all 0.3s ease-in-out;
+                        -webkit-transition: all 0.3s ease-in-out;
+                    }
+                }
                 box-shadow: none;
                 background: none;
                 border-radius: 0;
                 background-color: @white;
-                border: 1px solid @white;
+                border: 1px solid #b3bdc7;
 
-                &:hover {
+                &:hover{
                     box-shadow: none;
-                    border-color: @color-primary;
+                    border-color: @color-course-yellow;
+                    transition: all 0.3s ease-in-out;
+                    -webkit-transition: all 0.3s ease-in-out;
                 }
 
                 .inner-wrapper {

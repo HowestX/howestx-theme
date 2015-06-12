@@ -23,6 +23,11 @@
         }
 
         form {
+            padding-right: 200px;
+            @media (max-width: @screen-md-min) {
+                padding-right: 0;
+            }
+
             .status {
                 .ionisx-alert();
 
@@ -65,6 +70,7 @@
                 color: inherit;
                 display: inline-block;
                 margin: 0;
+                padding-right: 100px;
             }
 
             div.squaredThree {
@@ -113,6 +119,7 @@
         .hidden-sm();
         .size(@_aside-size, auto);
 
+        color: grey;
         padding: 0;
         margin: 0;
         float: right;
@@ -120,13 +127,26 @@
         p {
             font: inherit;
             color: inherit;
-
             font-size: 0.9em;
         }
 
         a {
             font: inherit;
             color: @color-primary;
+        }
+        .cta-login{
+            .instructions{
+                .cta-login-action{
+                    .ionisx-btn(@color-howest, @white);
+                    border-style: none;
+                    background-color: @white;
+
+                    &:hover{
+                        background-color: @white;
+                        color: @color-howest;
+                    }
+                }
+            }
         }
     }
 }
