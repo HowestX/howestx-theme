@@ -20,17 +20,26 @@
         }
         .navigation-course1{
             li{
+                display: inline-block;
                 height: 35px;
+                a{
+                    display: inline-block;
+                    padding-top: 5px;
+                }
             }
         }
 
         .navigation-course2{
-            margin:20px 0px;
+            // margin:20px 0px;
 
             li{
                 float: left;
                 margin-bottom: 5px;
                 height: 35px;
+                a{
+                    display: inline-block;
+                    padding-top: 6px;
+                }
             }
         }
 
@@ -173,15 +182,6 @@
                     -webkit-transition-timing-function: ease-out;
                     transition-timing-function: ease-out;
                 }
-                .hvr-sweep-to-right-course:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-                    color: white;
-                    border: none;
-                }
-                .hvr-sweep-to-right-course:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
-                    -webkit-transform: scaleX(1);
-                    transform: scaleX(1);
-                    border: none;
-                }
 
                 box-shadow: none;
                 background: none;
@@ -194,6 +194,16 @@
                     border-color: @color-course-yellow;
                     transition: all 0.3s ease-in-out;
                     -webkit-transition: all 0.3s ease-in-out;
+
+                    .hvr-sweep-to-right-course, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+                        color: white;
+                        border: none;
+                    }
+                    .hvr-sweep-to-right-course:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+                        -webkit-transform: scaleX(1);
+                        transform: scaleX(1);
+                        border: none;
+                    }
                 }
 
                 .inner-wrapper {
