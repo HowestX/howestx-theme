@@ -178,6 +178,7 @@ header.global, header.global-new, header.global.slim {
 
         .nav-courseware {
             margin: 0;
+            margin-top: 2px;
 
             div {
                 margin: 0 5px 0 0;
@@ -197,6 +198,10 @@ header.global, header.global-new, header.global.slim {
                 &.cta-register {
                     display: none;
                 }
+            }
+
+            @media (max-width: @screen-md-min) {
+                margin-top: -4px !important;
             }
         }
 
