@@ -66,7 +66,10 @@
           $('.course').show();
         }
         function showCat(name) {
-          $('.course').not('.' + name).hide();
+          // $('.course').css('display','block').delay(1).not('.' + name).css('display','none');
+          $('.course').show(0).delay(1).not('.' + name).hide(0);
+
+          // $('.course').not('.' + name).hide(0);
         }
       </script>
 
@@ -78,6 +81,33 @@
         </li>
         %endfor
       </ul>
+      <li class="courses-listing-item">
+          <%include file="../course.html" args="course=course" />
+        </li>
+        <li class="courses-listing-item">
+          <%include file="../course.html" args="course=course" />
+        </li>
+        <li class="courses-listing-item">
+          <%include file="../course.html" args="course=course" />
+        </li>
+        <li class="courses-listing-item">
+          <%include file="../course.html" args="course=course" />
+        </li>
+        <li class="courses-listing-item">
+          <%include file="../course.html" args="course=course" />
+        </li>
+        <li class="courses-listing-item">
+          <%include file="../course.html" args="course=course" />
+        </li>
+        <li class="courses-listing-item">
+          <%include file="../course.html" args="course=course" />
+        </li>
+        <li class="courses-listing-item">
+          <%include file="../course.html" args="course=course" />
+        </li>
+        <li class="courses-listing-item">
+          <%include file="../course.html" args="course=course" />
+        </li>
     </section>
   </section>
 
