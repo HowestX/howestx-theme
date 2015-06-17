@@ -47,19 +47,28 @@
   <section class="courses-container">
       <!--Bovenste navigation-->
       <ul class="navigation-course1">
-        <li class="navigation-course linksactive"><a href=#>My courses</a>
-        <li class="navigation-course rechts"><a href=#>All courses</a>
+        <li class="navigation-course linksactive" onclick="showAll()"><a href=#>My courses</a></li>
+        <li class="navigation-course rechts"onclick="showAll()"><a href=#>All courses</a></li>
       </ul>
 
       <!--Onderste navagition-->
 
       <ul class="navigation-course2">
-        <li class="navigation-course links" ><a href="#">Web &#38; Design</a>
-        <li class="navigation-course links"><a href="#">App Development</a>
-        <li class="navigation-course links"><a href="#">Server Side Devel.</a>
-        <li class="navigation-course linksactive"><a href="#">Infrastructrure</a>
-        <li class="navigation-course rechts"><a href="#">Digital Expert Skills</a>
+        <li class="navigation-course links" onclick="showCat('color1')"><a href="#">Web &#38; Design</a></li>
+        <li class="navigation-course links" onclick="showCat('color2')"><a href="#">App Development</a></li>
+        <li class="navigation-course links" onclick="showCat('color3')"><a href="#">Server Side Devel.</a></li>
+        <li class="navigation-course links"><a href="#" onclick="showCat('color5')">Infrastructrure</a></li>
+        <li class="navigation-course rechts"><a href="#" onclick="showCat('color4')">Digital Expert Skills</a></li>
       </ul>
+
+      <script>
+        function showAll(){ 
+          $('.course').show();
+        }
+        function showCat(name) {
+          $('.course').not('.' + name).hide();
+        }
+      </script>
 
     <section class="courses">
        <ul class="courses-listing">
