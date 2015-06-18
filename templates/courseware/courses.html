@@ -63,11 +63,14 @@
 
       <script>
         function showAll(){ 
-          $('.course').show();
+          $('.courses-listing-item').show();
         }
         function showCat(name) {
+          $('.'+name).parent().addClass(name);
           // $('.course').css('display','block').delay(1).not('.' + name).css('display','none');
-          $('.course').show(0).delay(1).not('.' + name).hide(0);
+          $('.courses-listing-item').show(0).delay(1).not('.' + name).hide(0);
+          // $('.courses-listing-item').hide(0).delay(1).hasClass(name).show(0);
+          // $('.courses-listing-item').show(0).delay(1).siblings().not(.+name).hide(0);
 
           // $('.course').not('.' + name).hide(0);
         }
